@@ -65,7 +65,7 @@ public class Ape
 			
 			// Initializing Items, for dusts we set their sprite index here
 			mortarAndPestle = (new MortarAndPestle(mortarAndPestleID));
-			gemDust = (new GemDust(gemDustID,1));
+			gemDust = (new GemDust(gemDustID));
 			
 			// Adding to the Language Registry
 			LanguageRegistry.addName(new ItemStack(mortarAndPestle), "Mortar and Pestle");

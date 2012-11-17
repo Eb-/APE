@@ -8,6 +8,7 @@ import cpw.mods.fml.common.asm.SideOnly;
 import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
+import net.minecraft.src.MathHelper;
 
 public class GemDust extends Item 
 {
@@ -18,13 +19,13 @@ public class GemDust extends Item
 		"Jade Dust", "Jasper Dust", "Opal Dust", "Ruby Dust", "Sapphire Dust", "Topaz Dust", "Tourmaline Dust"
 	};
 	
-	public GemDust(int id, int spriteIndex)
+	public GemDust(int id)
 	{
 		super(id);
 		
 		setMaxStackSize(64);
 		setCreativeTab(CreativeTabs.tabMisc);
-		setIconIndex(spriteIndex);
+		setIconIndex(1);
 		setHasSubtypes(true);
 		setItemName("Gem Dust");
 	}
@@ -46,5 +47,11 @@ public class GemDust extends Item
 			subItems.add(new ItemStack(this, 1, ix));
 		}
 	}
+	
+	@SideOnly(Side.CLIENT)
+    public int getIconFromDamage(int damage)
+    {
+	    	return this.iconIndex + damage;
+    }
 	
 }
