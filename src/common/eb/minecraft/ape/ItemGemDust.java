@@ -10,7 +10,7 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.MathHelper;
 
-public class GemDust extends Item 
+public class ItemGemDust extends Item 
 {
 	// Dust names
 	private final static String[] dustNames = 
@@ -19,7 +19,7 @@ public class GemDust extends Item
 		"Jade Dust", "Jasper Dust", "Opal Dust", "Ruby Dust", "Sapphire Dust", "Topaz Dust", "Tourmaline Dust"
 	};
 	
-	public GemDust(int id)
+	public ItemGemDust(int id)
 	{
 		super(id);
 		

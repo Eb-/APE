@@ -4,9 +4,9 @@ import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 
-public class MortarAndPestle extends Item
+public class ItemMortarAndPestle extends Item
 {
-	public MortarAndPestle(int id)
+	public ItemMortarAndPestle(int id)
 	{
 		super(id);
 		

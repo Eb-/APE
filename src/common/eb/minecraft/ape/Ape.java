@@ -19,8 +19,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.Property;
 
-// temp imports
-
+//TODO: Add recipes for dusts
 
 @Mod(modid="APE", name="Alcohol, Potions, and Enchantments", version="0.0.1")
 @NetworkMod(clientSideRequired=true, serverSideRequired=true)
@@ -64,8 +63,8 @@ public class Ape
 			// Initializing Blocks
 			
 			// Initializing Items, for dusts we set their sprite index here
-			mortarAndPestle = (new MortarAndPestle(mortarAndPestleID));
-			gemDust = (new GemDust(gemDustID));
+			mortarAndPestle = (new ItemMortarAndPestle(mortarAndPestleID));
+			gemDust = (new ItemGemDust(gemDustID));
 			
 			// Adding to the Language Registry
 			LanguageRegistry.addName(new ItemStack(mortarAndPestle), "Mortar and Pestle");
@@ -87,7 +86,6 @@ public class Ape
 			{
 				ItemStack gemDustIS = new ItemStack(gemDust, 1, ix);
 				
-				// Disabled until I get some dummy items made.
 				//GameRegistry.addShapelessRecipe(gemDustIS, Ape.mortarAndPestle, ("gem" + dustNames[gemDustIS.getItemDamage()].toLowerCase() ));
 				LanguageRegistry.addName(gemDustIS, dustNames[gemDustIS.getItemDamage()] + " Dust");
 			}
