@@ -1,4 +1,4 @@
-package eb.minecraft.ape;
+package eb.minecraft.ape.blocks;
 
 import net.minecraft.src.ItemBlock;
 

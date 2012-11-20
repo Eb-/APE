@@ -1,4 +1,4 @@
-package eb.minecraft.ape;
+package eb.minecraft.ape.items;
 
 import net.minecraft.src.ItemGlassBottle;
 

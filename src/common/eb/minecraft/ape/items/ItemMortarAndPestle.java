@@ -1,5 +1,6 @@
-package eb.minecraft.ape;
+package eb.minecraft.ape.items;
 
+import eb.minecraft.ape.CommonProxy;
 import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
